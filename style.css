@@ -186,6 +186,42 @@ html[data-theme="light"] .site-header { background: rgba(248, 250, 252, 0.7); }
 html[data-theme="light"] .form-control { background: #fff; }
 .form-control:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
 
+/* --- FORM RESULT BADGE --- */
+.form-result-badge {
+  display: none; /* Hidden by default */
+  margin-top: 16px;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+/* Loading State */
+.form-result-badge.loading {
+  display: block;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border-color: var(--border-color);
+}
+
+/* Success State */
+.form-result-badge.success {
+  display: block;
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* Error State */
+.form-result-badge.error {
+  display: block;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.2);
+}
 footer { text-align: center; padding: 40px 0; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem; margin-top: 80px; }
 
 /* --- UTILITIES & ANIMATIONS --- */

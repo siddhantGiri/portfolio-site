@@ -228,7 +228,7 @@
           </div>
 
           <div>
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="394458c4-ab1d-4079-8cfc-d91a99024c1d" />
               
               <div class="form-group">
@@ -244,6 +244,8 @@
                 <textarea id="message" name="message" rows="4" class="form-control" required placeholder="How can I help you?"></textarea>
               </div>
               <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Message</button>
+              <!-- Add this to show success/error messages -->
+              <div id="form-result" class="form-result-badge"></div>
             </form>
           </div>
         </div>
